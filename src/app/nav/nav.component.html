@@ -1,0 +1,37 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue scrolling-navbar ie-nav" [containerInside]="false">
+  <mdb-navbar-brand>
+    <a class="logo navbar-brand" href="#">
+      <strong>LAST CHANCE</strong> &nbsp;
+      <i class="fa fa-magic"></i>
+    </a>
+  </mdb-navbar-brand>
+  <links>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item waves-light" routerLink="/offers" routerLinkActive="active" mdbWavesEffect>
+        <a class="nav-link">BROWSE
+        </a>
+      </li>
+      <li class="nav-item waves-light" routerLink="/manage" routerLinkActive="active" mdbWavesEffect>
+        <a class="nav-link">MANAGE</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item waves-light" mdbWavesEffect *ngIf="false">
+        <a class="nav-link">
+          <a class="nav-link">Hi Manoj!</a>
+        </a>
+      </li>
+
+      <li class="nav-item waves-light" routerLink="/auth" routerLinkActive="active" mdbWavesEffect *ngIf="true">
+        <a class="nav-link">
+          <a class="nav-link">Login</a>
+        </a>
+      </li>
+      <li class="nav-item waves-light" mdbWavesEffect *ngIf="false">
+        <a class="nav-link">
+          <a class="nav-link">Logout</a>
+        </a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>
